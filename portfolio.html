@@ -15,7 +15,6 @@
 
 <body>
 
-
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <div class="row">
@@ -50,44 +49,81 @@
 
     <div class="container">
         <section class="mainSection">
-
             <div class="row">
                 <div class="col">
-                    <h3>About Me</h3>
+                    <h3>Portfolio</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="psychicGame" class="col-sm-4">
+                    <img class="portImg" src="images/fortune-teller.jpg" alt="Word Guess">
+
+                    <h4>Psychic Game</h4>
+                </div>
+                <div id="rpgGame" class="col-sm-4">
+
+                    <img class="portImg" src="images/SG-sky.jpg" alt="RPG Game">
+
+                    <h4>RPG Game</h4>
                 </div>
             </div>
 
 
             <div class="row">
-                <div class="col-sm-2">
-                    <img class="p-3" src="images/150px-icon.png" alt="Place Holder">
+                <div id="triviaGame" class="col-sm-4">
+                    <img class="portImg" src="images/castle.jpg" alt="Trivia Game">
+                    <h4>Trivia Game</h4>
                 </div>
-                <div class="clearfix"></div>
-                <div class=col-9>
-                    <div class="p-3 ml-2">
-                        <p>Hello and Welcome To My Page!</p>
 
-                        <p>I graduated from Arizona State University with a Bachelor's in Business Sustainability and
-                            is currently enrolled in University of Arizona's Coding Boot Camp. The reason being that I
-                            had an interest in coding and wanted to pursue a career that wasn't Sales or Management as
-                            I have found that it was not a good fit for me. Instead I prefer hands-on activites where I
-                            am able to see through the whole project from beginning to end. I found coding to be fun
-                            and challenging like a puzzle waiting to be completed. While I am still a beginner in
-                            learning the concept of coding, I am very excited to see what I will be able to do in the
-                            next couple of months!</p>
+                <div id="giftastic" class="col-sm-4">
+                    <img class="portImg" src="images/pizza.jpg" alt="Rutgers Info Widget">
 
+                    <h4>Gif-Tastic Food</h4>
+                </div>
+            </div>
 
-                    </div>
+            <div class="row">
+                <div id="trainSchedule" class="col-sm-3">
+                    <img class="portImg" src="images/train.jpg" alt="Rock Paper Scissors">
+
+                    <h4>Train Schedule</h4>
                 </div>
             </div>
         </section>
     </div>
+
 
     <footer class="footer py-3">
         <div class="container">
             Copyright &copy;
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#psychicGame").on("click", function () {
+            window.open("https://t-yin.github.io/Psychic-Game/", "_blank");
+        });
+
+        $("#rpgGame").on("click", function () {
+            window.open("https://t-yin.github.io/Unit-4-Game/", "_blank");
+        });
+
+        $("#triviaGame").on("click", function () {
+            window.open("https://t-yin.github.io/TriviaGame/", "_blank");
+        });
+
+        $("#giftastic").on("click", function () {
+            window.open("https://t-yin.github.io/GifTastic-Food/", "_blank");
+        });
+
+        $("#trainSchedule").on("click", function () {
+            window.open("https://t-yin.github.io/Train_Activity/", "_blank");
+        });
+    </script>
 
 </body>
 
