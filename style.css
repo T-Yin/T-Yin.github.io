@@ -56,6 +56,10 @@ h3 {
   position: relative;
 }
 
+.active {
+  color: #d89e9e;
+}
+
 h4 {
   position: absolute;
   bottom: 10px;
