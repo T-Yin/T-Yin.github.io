@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap Portfolio</title>
+    <title>Tiffany's Portfolio</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Sedgwick+Ave" rel="stylesheet">\
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Link to Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Yeseva+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 
@@ -19,6 +25,150 @@
 
 <body>
 
+    <div class="container">
+        <div class="row">
+
+            <!-- Profile image here -->
+            <div class="col-sm-3 text-center">
+                <img id="profile-img" src="./images/me_icon copy.png" alt="profile image">
+
+                <!-- <section class="contact rounded">
+                    <p class="text-left"><i class="fas fa-envelope"></i> xtiffany.yin@gmail.com</p>
+                    <p class="text-left"><i class="fas fa-phone"></i> (480)208-9252</p>
+                </section> -->
+
+                <!-- Speech bubble here -->
+            </div>
+            <div class="col-sm-9 text-center">
+                <div class="speech-bubble mt-4">
+                    <h1 class="display-4">Hello there!</h1>
+                    <h3 class="lead">My name is Tiffany Yin and I am a Full Stack Web Developer.</h3>
+                    <hr class="my-3 mr-4 ml-4">
+                    <p><i class="fas fa-envelope"></i> xtiffany.yin@gmail.com | <i class="fas fa-phone"></i>
+                        (480)208-9252</p>
+                    <a href="https://drive.google.com/open?id=1jb-fiMMsQ3h6hEMuheKbroJCjqnN4pfc" target="_blank"><button
+                            class="btn"><i class="fas fa-file-alt"></i> Resume</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <h3 class="highlights">Highlighted Works</h3>
+        </div> -->
+
+        <!-- List of highlighted works -->
+        <div class="row text-center boxes">
+            <div class="col-sm-3 box">
+                <h4>GameAdvisor</h4>
+                <a href="https://banana-cupcake-16306.herokuapp.com" target="_blank"><img class="site-img"
+                        src="./images/gameadvisor.jpg" alt="game advisor website"></a>
+                <p>
+                    <a href="https://banana-cupcake-16306.herokuapp.com" target="_blank">App Link</a> | <a
+                        href="https://github.com/Bobachu/project3">Github Repository</a>
+                </p>
+                <hr class="my-3 mr-4 ml-4">
+                <p>GameAdvisor is a complete M.E.R.N.
+                    app that allows users to sign up and search for details and live gameplay of video games.</p>
+            </div>
+            <div class="col-sm-3 box">
+                <h4>Conspicuous Cupcakes</h4>
+                <a href="https://hidden-harbor-91220.herokuapp.com/" target="_blank"><img class="site-img"
+                        src="./images/cupcakes.jpg" alt="cupcake website"></a>
+                <p>
+                    <a href="https://hidden-harbor-91220.herokuapp.com/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/conspicuous-cupcakes" target="_blank">Github Repository</a>
+                </p>
+                <hr class="my-3 mr-4 ml-4">
+                <p>A fully integrated C.R.U.D. application featuring some delicious cupcakes. Utilizes
+                    MySQL, jQuery, and handlebars.</p>
+            </div>
+            <div class="col-sm-3 box">
+                <h4>RPG Battle Game</h4>
+                <a href="https://t-yin.github.io/Unit-4-Game/" target="_blank"><img class="site-img"
+                        src="./images/sgbattle.jpg" alt="rpg game website"></a>
+                <p>
+                    <a href="https://t-yin.github.io/Unit-4-Game/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/Unit-4-Game" target="_blank">Github Repository</a>
+                </p>
+                <hr class="my-3 mr-4 ml-4">
+                <p>A web game where a user is able to choose their character and battle an opponent.
+                    Utilizes vanilla Javascript to interact with the DOM.</p>
+            </div>
+        </div>
+
+        <button type="button" id="show-other" class="btn-outline btn-block">Show more <i
+                class="fas fa-chevron-down"></i></button>
+
+        <div id="other-works">
+
+            <div class="row">
+                <div class="col box">
+                    <h4><i class="fas fa-newspaper"></i> News Scraper</h4>
+                    <a href="https://vast-crag-88642.herokuapp.com/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/News-Scrape" target="_blank">Github Repository</a>
+                    <p>A web app that lets users view and leave comments on the latest news from CNN. Utilizes Mongoose
+                        and Cheerio to scrape articles from the website.</p>
+                </div>
+
+                <div class="col box">
+                    <h4><i class="fas fa-train"></i> Train Scheduler</h4>
+                    <a href="https://t-yin.github.io/Train_Activity/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/Train_Activity" target="_blank">Github Repository</a>
+                    <p>An app that displays user-created trains and their schedules. Shows when the next train will
+                        arrive while utilizing moment.js and firebase servers.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col box">
+                    <h4><i class="fas fa-user-friends"></i> Friend Finder</h4>
+                    <a href="https://mighty-brushlands-59636.herokuapp.com/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/Friend-Finder" target="_blank">Github Repository</a>
+                    <p>A compatibility-based "Friend-Finder" application that uses express and path node packages. The
+                        questions use a range/slider for the user's answers and compares them to each of the "friends"
+                        listed in the API.</p>
+                </div>
+                <div class="col box">
+
+                    <h4><i class="fas fa-shopping-cart"></i> bAmazon Node App</h4>
+                    <a href="https://t-yin.github.io/bamazon_MySQL/" target="_blank">README</a> | <a
+                        href="https://github.com/T-Yin/bamazon_MySQL" target="_blank">Github Repository</a>
+                    <p>An Amazon-like storefront made with MySQL and Inquirer ran through the terminal. The app will
+                        take in orders from customers and deplete stock from the store’s inventory.</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col box">
+                    <h4><i class="fas fa-film"></i> Trailer Surfer</h4>
+                    <a href="https://t-yin.github.io/project1/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/project1" target="_blank">Github Repository</a>
+                    <p>A website that allows users to search for movie info and their trailers. Utilizes YouTube's and
+                        OMDB's APIs. Has an option for users to save their movies into their local storage.</p>
+                </div>
+
+                <div class="col box">
+                    <h4><i class="fas fa-gamepad"></i> Clicky Game</h4>
+                    <a href="https://cryptic-shelf-59429.herokuapp.com/" target="_blank">App Link</a> | <a
+                        href="https://github.com/T-Yin/Clicky-Game" target="_blank">Github Repository</a>
+                    <p>A memory game made with React where you are only able to click on an image once. The images
+                        shuffle in random order when clicked. Scores are kept with session storage.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- DEAD CODE
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -91,8 +241,12 @@
         <div class="container">
             Copyright &copy;
         </div>
-    </footer>
+    </footer> -->
 
 </body>
+<!-- Link to javascript -->
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 
 </html>
