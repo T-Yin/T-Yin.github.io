@@ -25,36 +25,32 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <!-- Profile image here -->
-            <div class="col-sm-3 text-center">
-                <img id="profile-img" src="./images/me_icon copy.png" alt="profile image">
-
-                <!-- <section class="contact rounded">
-                    <p class="text-left"><i class="fas fa-envelope"></i> xtiffany.yin@gmail.com</p>
-                    <p class="text-left"><i class="fas fa-phone"></i> (480)208-9252</p>
-                </section> -->
-
-                <!-- Speech bubble here -->
-            </div>
-            <div class="col-sm-9 text-center">
-                <div class="speech-bubble mt-4">
-                    <h1 class="display-4">Hello there!</h1>
-                    <h3 class="lead">My name is Tiffany Yin and I am a Full Stack Web Developer.</h3>
-                    <hr class="my-3 mr-4 ml-4">
-                    <p><i class="fas fa-envelope"></i> xtiffany.yin@gmail.com | <i class="fas fa-phone"></i>
-                        (480)208-9252</p>
-                    <a href="https://drive.google.com/open?id=1jb-fiMMsQ3h6hEMuheKbroJCjqnN4pfc" target="_blank"><button
-                            class="btn"><i class="fas fa-file-alt"></i> Resume</button></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar-link" href="./about.html">About <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-link navbar-active" href="./index.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-link" href="https://drive.google.com/open?id=1jb-fiMMsQ3h6hEMuheKbroJCjqnN4pfc" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+        
+                    <div class="contact">
+                        <i class="fas fa-envelope"></i>: xtiffany.yin@gmail.com   <i class="fas fa-phone"></i>:
+                        (480) 208-9252
+                    </div>
+        
                 </div>
-            </div>
-        </div>
+            </nav>
 
-        <!-- <div class="row">
-            <h3 class="highlights">Highlighted Works</h3>
-        </div> -->
+    <div class="container">
+
+        <img class="border-img" src="./images/border-up.png" alt="border" width="450px">
 
         <!-- List of highlighted works -->
         <div class="row text-center boxes">
@@ -96,69 +92,71 @@
             </div>
         </div>
 
-        <button type="button" id="show-other" class="btn-outline btn-block">Show more <i
-                class="fas fa-chevron-down"></i></button>
+        <!-- <button type="button" id="show-other" class="btn-outline btn-block">Show more <i
+                class="fas fa-chevron-down"></i></button> -->
 
-        <div id="other-works">
+        <!-- <div id="other-works"> -->
 
-            <div class="row">
-                <div class="col box">
-                    <h4><i class="fas fa-newspaper"></i> News Scraper</h4>
-                    <a href="https://vast-crag-88642.herokuapp.com/" target="_blank">App Link</a> | <a
-                        href="https://github.com/T-Yin/News-Scrape" target="_blank">Github Repository</a>
-                    <p>A web app that lets users view and leave comments on the latest news from CNN. Utilizes Mongoose
-                        and Cheerio to scrape articles from the website.</p>
-                </div>
+        <img class="border-img" src="./images/border-down.png" alt="border" width="450px">
 
-                <div class="col box">
-                    <h4><i class="fas fa-train"></i> Train Scheduler</h4>
-                    <a href="https://t-yin.github.io/Train_Activity/" target="_blank">App Link</a> | <a
-                        href="https://github.com/T-Yin/Train_Activity" target="_blank">Github Repository</a>
-                    <p>An app that displays user-created trains and their schedules. Shows when the next train will
-                        arrive while utilizing moment.js and firebase servers.</p>
-                </div>
+        <div class="row">
+            <div class="col box">
+                <h4><i class="fas fa-newspaper"></i> News Scraper</h4>
+                <a href="https://vast-crag-88642.herokuapp.com/" target="_blank">App Link</a> | <a
+                    href="https://github.com/T-Yin/News-Scrape" target="_blank">Github Repository</a>
+                <p>A web app that lets users view and leave comments on the latest news from CNN. Utilizes Mongoose
+                    and Cheerio to scrape articles from the website.</p>
             </div>
 
-            <div class="row">
-                <div class="col box">
-                    <h4><i class="fas fa-user-friends"></i> Friend Finder</h4>
-                    <a href="https://mighty-brushlands-59636.herokuapp.com/" target="_blank">App Link</a> | <a
-                        href="https://github.com/T-Yin/Friend-Finder" target="_blank">Github Repository</a>
-                    <p>A compatibility-based "Friend-Finder" application that uses express and path node packages. The
-                        questions use a range/slider for the user's answers and compares them to each of the "friends"
-                        listed in the API.</p>
-                </div>
-                <div class="col box">
-
-                    <h4><i class="fas fa-shopping-cart"></i> bAmazon Node App</h4>
-                    <a href="https://t-yin.github.io/bamazon_MySQL/" target="_blank">README</a> | <a
-                        href="https://github.com/T-Yin/bamazon_MySQL" target="_blank">Github Repository</a>
-                    <p>An Amazon-like storefront made with MySQL and Inquirer ran through the terminal. The app will
-                        take in orders from customers and deplete stock from the store’s inventory.</p>
-                </div>
-
+            <div class="col box">
+                <h4><i class="fas fa-train"></i> Train Scheduler</h4>
+                <a href="https://t-yin.github.io/Train_Activity/" target="_blank">App Link</a> | <a
+                    href="https://github.com/T-Yin/Train_Activity" target="_blank">Github Repository</a>
+                <p>An app that displays user-created trains and their schedules. Shows when the next train will
+                    arrive while utilizing moment.js and firebase servers.</p>
             </div>
+        </div>
 
-            <div class="row">
+        <div class="row">
+            <div class="col box">
+                <h4><i class="fas fa-user-friends"></i> Friend Finder</h4>
+                <a href="https://mighty-brushlands-59636.herokuapp.com/" target="_blank">App Link</a> | <a
+                    href="https://github.com/T-Yin/Friend-Finder" target="_blank">Github Repository</a>
+                <p>A compatibility-based "Friend-Finder" application that uses express and path node packages. The
+                    questions use a range/slider for the user's answers and compares them to each of the "friends"
+                    listed in the API.</p>
+            </div>
+            <div class="col box">
 
-                <div class="col box">
-                    <h4><i class="fas fa-film"></i> Trailer Surfer</h4>
-                    <a href="https://t-yin.github.io/project1/" target="_blank">App Link</a> | <a
-                        href="https://github.com/T-Yin/project1" target="_blank">Github Repository</a>
-                    <p>A website that allows users to search for movie info and their trailers. Utilizes YouTube's and
-                        OMDB's APIs. Has an option for users to save their movies into their local storage.</p>
-                </div>
-
-                <div class="col box">
-                    <h4><i class="fas fa-gamepad"></i> Clicky Game</h4>
-                    <a href="https://cryptic-shelf-59429.herokuapp.com/" target="_blank">App Link</a> | <a
-                        href="https://github.com/T-Yin/Clicky-Game" target="_blank">Github Repository</a>
-                    <p>A memory game made with React where you are only able to click on an image once. The images
-                        shuffle in random order when clicked. Scores are kept with session storage.</p>
-                </div>
+                <h4><i class="fas fa-shopping-cart"></i> bAmazon Node App</h4>
+                <a href="https://t-yin.github.io/bamazon_MySQL/" target="_blank">README</a> | <a
+                    href="https://github.com/T-Yin/bamazon_MySQL" target="_blank">Github Repository</a>
+                <p>An Amazon-like storefront made with MySQL and Inquirer ran through the terminal. The app will
+                    take in orders from customers and deplete stock from the store’s inventory.</p>
             </div>
 
         </div>
+
+        <div class="row">
+
+            <div class="col box">
+                <h4><i class="fas fa-film"></i> Trailer Surfer</h4>
+                <a href="https://t-yin.github.io/project1/" target="_blank">App Link</a> | <a
+                    href="https://github.com/T-Yin/project1" target="_blank">Github Repository</a>
+                <p>A website that allows users to search for movie info and their trailers. Utilizes YouTube's and
+                    OMDB's APIs. Has an option for users to save their movies into their local storage.</p>
+            </div>
+
+            <div class="col box">
+                <h4><i class="fas fa-gamepad"></i> Clicky Game</h4>
+                <a href="https://cryptic-shelf-59429.herokuapp.com/" target="_blank">App Link</a> | <a
+                    href="https://github.com/T-Yin/Clicky-Game" target="_blank">Github Repository</a>
+                <p>A memory game made with React where you are only able to click on an image once. The images
+                    shuffle in random order when clicked. Scores are kept with session storage.</p>
+            </div>
+        </div>
+
+        <!-- </div> -->
 
     </div>
 

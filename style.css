@@ -50,7 +50,7 @@ h4 {
     content: '';
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 25%;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -105,9 +105,30 @@ a:hover {
     color: #366d72;
 }
 
+.contact {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 73%;
+    font-size: 13px;
+}
+
+.fa-phone {
+    margin-left: 15px;
+}
+
+.navbar-active {
+    color: #2a2a2a;
+}
+
+.navbar-link {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .boxes {
     margin-top: 25px;
     margin-bottom: 10px;
+    margin-left: 1%;
 }
 
 .btn-outline {
@@ -130,4 +151,8 @@ a:hover {
 
 .nav-text {
     left: 70%;
+}
+
+.border-img {
+    margin-left: 29%;
 }
